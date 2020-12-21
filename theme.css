@@ -1,0 +1,9 @@
+body, input {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.spanBox {
+	border: 2px solid #FFFFFF;
+	display: inline-block;
+}

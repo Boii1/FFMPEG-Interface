@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Media Converter</title>
+		<link rel="stylesheet" type="text/css" href="/theme">
+	</head>
+	<body>
+		<div class="spanBox">
+			<form action="/upload" enctype="multipart/form-data" method="post">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<span>File:</span>
+							</td>
+							<td>
+								<input type="file" name="upload" multiple required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Video Bitrate:</span>
+							</td>
+							<td>
+								<input type="text" name="vBits" value="4096" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Size:</span>
+							</td>
+							<td>
+								<input type="text" name="size" value="100" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>FPS:</span>
+							</td>
+							<td>
+								<input type="text" name="fps" value="60" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Audio Bitrate:</span>
+							</td>
+							<td>
+								<input type="text" name="aBits" value="192" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Audio Channels:</span>
+							</td>
+							<td>
+								<input type="text" name="channels" value="2" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Format:</span>
+							</td>
+							<td>
+								<select style="width: 146px;" name="format" required>
+									<option value="3dostr">3dostr</option>
+									<option value="3g2">3g2</option>
+									<option value="3gp">3gp</option>
+									<option value="4xm">4xm</option>
+									<option value="a64">a64</option>
+									<option value="aa">aa</option>
+									<option value="aac">aac</option>
+									<option value="ac3">ac3</option>
+									<option value="acm">acm</option>
+									<option value="act">act</option>
+									<option value="adf">adf</option>
+									<option value="adp">adp</option>
+									<option value="ads">ads</option>
+									<option value="adts">adts</option>
+									<option value="adx">adx</option>
+									<option value="aea">aea</option>
+									<option value="afc">afc</option>
+									<option value="aiff">aiff</option>
+									<option value="aix">aix</option>
+									<option value="alaw">alaw</option>
+									<option value="alias_pix">alias_pix</option>
+									<option value="alp">alp</option>
+									<option value="amr">amr</option>
+									<option value="amrnb">amrnb</option>
+									<option value="amrwb">amrwb</option>
+									<option value="anm">anm</option>
+									<option value="apc">apc</option>
+									<option value="ape">ape</option>
+									<option value="apm">apm</option>
+									<option value="apng">apng</option>
+									<option value="aptx">aptx</option>
+									<option value="aptx_hd">aptx_hd</option>
+									<option value="aqtitle">aqtitle</option>
+									<option value="argo_asf">argo_asf</option>
+									<option value="asf">asf</option>
+									<option value="asf_o">asf_o</option>
+									<option value="asf_stream">asf_stream</option>
+									<option value="ass">ass</option>
+									<option value="ast">ast</option>
+									<option value="au">au</option>
+									<option value="av1">av1</option>
+									<option value="avi">avi</option>
+									<option value="avisynth">avisynth</option>
+									<option value="avm2">avm2</option>
+									<option value="avr">avr</option>
+									<option value="avs">avs</option>
+									<option value="avs2">avs2</option>
+									<option value="bethsoftvid">bethsoftvid</option>
+									<option value="bfi">bfi</option>
+									<option value="bfstm">bfstm</option>
+									<option value="bin">bin</option>
+									<option value="bink">bink</option>
+									<option value="bit">bit</option>
+									<option value="bmp_pipe">bmp_pipe</option>
+									<option value="bmv">bmv</option>
+									<option value="boa">boa</option>
+									<option value="brender_pix">brender_pix</option>
+									<option value="brstm">brstm</option>
+									<option value="c93">c93</option>
+									<option value="caf">caf</option>
+									<option value="cavsvideo">cavsvideo</option>
+									<option value="cdg">cdg</option>
+									<option value="cdxl">cdxl</option>
+									<option value="cine">cine</option>
+									<option value="codec2">codec2</option>
+									<option value="codec2raw">codec2raw</option>
+									<option value="concat">concat</option>
+									<option value="crc">crc</option>
+									<option value="dash">dash</option>
+									<option value="data">data</option>
+									<option value="daud">daud</option>
+									<option value="dcstr">dcstr</option>
+									<option value="dds_pipe">dds_pipe</option>
+									<option value="derf">derf</option>
+									<option value="dfa">dfa</option>
+									<option value="dhav">dhav</option>
+									<option value="dirac">dirac</option>
+									<option value="dnxhd">dnxhd</option>
+									<option value="dpx_pipe">dpx_pipe</option>
+									<option value="dsf">dsf</option>
+									<option value="dshow">dshow</option>
+									<option value="dsicin">dsicin</option>
+									<option value="dss">dss</option>
+									<option value="dts">dts</option>
+									<option value="dtshd">dtshd</option>
+									<option value="dv">dv</option>
+									<option value="dvbsub">dvbsub</option>
+									<option value="dvbtxt">dvbtxt</option>
+									<option value="dvd">dvd</option>
+									<option value="dxa">dxa</option>
+									<option value="ea">ea</option>
+									<option value="ea_cdata">ea_cdata</option>
+									<option value="eac3">eac3</option>
+									<option value="epaf">epaf</option>
+									<option value="exr_pipe">exr_pipe</option>
+									<option value="f32be">f32be</option>
+									<option value="f32le">f32le</option>
+									<option value="f4v">f4v</option>
+									<option value="f64be">f64be</option>
+									<option value="f64le">f64le</option>
+									<option value="ffmetadata">ffmetadata</option>
+									<option value="fifo">fifo</option>
+									<option value="fifo_test">fifo_test</option>
+									<option value="film_cpk">film_cpk</option>
+									<option value="filmstrip">filmstrip</option>
+									<option value="fits">fits</option>
+									<option value="flac">flac</option>
+									<option value="flic">flic</option>
+									<option value="flv">flv</option>
+									<option value="framecrc">framecrc</option>
+									<option value="framehash">framehash</option>
+									<option value="framemd5">framemd5</option>
+									<option value="frm">frm</option>
+									<option value="fsb">fsb</option>
+									<option value="fwse">fwse</option>
+									<option value="g722">g722</option>
+									<option value="g723_1">g723_1</option>
+									<option value="g726">g726</option>
+									<option value="g726le">g726le</option>
+									<option value="g729">g729</option>
+									<option value="gdigrab">gdigrab</option>
+									<option value="gdv">gdv</option>
+									<option value="genh">genh</option>
+									<option value="gif">gif</option>
+									<option value="gif_pipe">gif_pipe</option>
+									<option value="gsm">gsm</option>
+									<option value="gxf">gxf</option>
+									<option value="h261">h261</option>
+									<option value="h263">h263</option>
+									<option value="h264">h264</option>
+									<option value="hash">hash</option>
+									<option value="hca">hca</option>
+									<option value="hcom">hcom</option>
+									<option value="hds">hds</option>
+									<option value="hevc">hevc</option>
+									<option value="hls">hls</option>
+									<option value="hnm">hnm</option>
+									<option value="ico">ico</option>
+									<option value="idcin">idcin</option>
+									<option value="idf">idf</option>
+									<option value="iff">iff</option>
+									<option value="ifv">ifv</option>
+									<option value="ilbc">ilbc</option>
+									<option value="image2">image2</option>
+									<option value="image2pipe">image2pipe</option>
+									<option value="ingenient">ingenient</option>
+									<option value="ipmovie">ipmovie</option>
+									<option value="ipod">ipod</option>
+									<option value="ircam">ircam</option>
+									<option value="ismv">ismv</option>
+									<option value="iss">iss</option>
+									<option value="iv8">iv8</option>
+									<option value="ivf">ivf</option>
+									<option value="ivr">ivr</option>
+									<option value="j2k_pipe">j2k_pipe</option>
+									<option value="jacosub">jacosub</option>
+									<option value="jpeg_pipe">jpeg_pipe</option>
+									<option value="jpegls_pipe">jpegls_pipe</option>
+									<option value="jv">jv</option>
+									<option value="kux">kux</option>
+									<option value="kvag">kvag</option>
+									<option value="latm">latm</option>
+									<option value="lavfi">lavfi</option>
+									<option value="libopenmpt">libopenmpt</option>
+									<option value="live_flv">live_flv</option>
+									<option value="lmlm4">lmlm4</option>
+									<option value="loas">loas</option>
+									<option value="lrc">lrc</option>
+									<option value="lvf">lvf</option>
+									<option value="lxf">lxf</option>
+									<option value="m4v">m4v</option>
+									<option value="matroska">matroska</option>
+									<option value="matroska,webm">webm</option>
+									<option value="md5">md5</option>
+									<option value="mgsts">mgsts</option>
+									<option value="microdvd">microdvd</option>
+									<option value="mjpeg">mjpeg</option>
+									<option value="mjpeg_2000">mjpeg_2000</option>
+									<option value="mkvtimestamp_v2">mkvtimestamp_v2</option>
+									<option value="mlp">mlp</option>
+									<option value="mlv">mlv</option>
+									<option value="mm">mm</option>
+									<option value="mmf">mmf</option>
+									<option value="mov">mov</option>
+									<option value="mp2">mp2</option>
+									<option value="mp3">mp3</option>
+									<option value="mp4" selected>mp4</option>
+									<option value="mpc">mpc</option>
+									<option value="mpc8">mpc8</option>
+									<option value="mpeg">mpeg</option>
+									<option value="mpeg1video">mpeg1video</option>
+									<option value="mpeg2video">mpeg2video</option>
+									<option value="mpegts">mpegts</option>
+									<option value="mpegtsraw">mpegtsraw</option>
+									<option value="mpegvideo">mpegvideo</option>
+									<option value="mpjpeg">mpjpeg</option>
+									<option value="mpl2">mpl2</option>
+									<option value="mpsub">mpsub</option>
+									<option value="msf">msf</option>
+									<option value="msnwctcp">msnwctcp</option>
+									<option value="mtaf">mtaf</option>
+									<option value="mtv">mtv</option>
+									<option value="mulaw">mulaw</option>
+									<option value="musx">musx</option>
+									<option value="mv">mv</option>
+									<option value="mvi">mvi</option>
+									<option value="mxf">mxf</option>
+									<option value="mxf_d10">mxf_d10</option>
+									<option value="mxf_opatom">mxf_opatom</option>
+									<option value="mxg">mxg</option>
+									<option value="nc">nc</option>
+									<option value="nistsphere">nistsphere</option>
+									<option value="nsp">nsp</option>
+									<option value="nsv">nsv</option>
+									<option value="null">null</option>
+									<option value="nut">nut</option>
+									<option value="nuv">nuv</option>
+									<option value="oga">oga</option>
+									<option value="ogg">ogg</option>
+									<option value="ogv">ogv</option>
+									<option value="oma">oma</option>
+									<option value="opus">opus</option>
+									<option value="paf">paf</option>
+									<option value="pam_pipe">pam_pipe</option>
+									<option value="pbm_pipe">pbm_pipe</option>
+									<option value="pcx_pipe">pcx_pipe</option>
+									<option value="pgm_pipe">pgm_pipe</option>
+									<option value="pgmyuv_pipe">pgmyuv_pipe</option>
+									<option value="pictor_pipe">pictor_pipe</option>
+									<option value="pjs">pjs</option>
+									<option value="pmp">pmp</option>
+									<option value="png_pipe">png_pipe</option>
+									<option value="pp_bnk">pp_bnk</option>
+									<option value="ppm_pipe">ppm_pipe</option>
+									<option value="psd_pipe">psd_pipe</option>
+									<option value="psp">psp</option>
+									<option value="psxstr">psxstr</option>
+									<option value="pva">pva</option>
+									<option value="pvf">pvf</option>
+									<option value="qcp">qcp</option>
+									<option value="qdraw_pipe">qdraw_pipe</option>
+									<option value="r3d">r3d</option>
+									<option value="rawvideo">rawvideo</option>
+									<option value="realtext">realtext</option>
+									<option value="redspark">redspark</option>
+									<option value="rl2">rl2</option>
+									<option value="rm">rm</option>
+									<option value="roq">roq</option>
+									<option value="rpl">rpl</option>
+									<option value="rsd">rsd</option>
+									<option value="rso">rso</option>
+									<option value="rtp">rtp</option>
+									<option value="rtp_mpegts">rtp_mpegts</option>
+									<option value="rtsp">rtsp</option>
+									<option value="s16be">s16be</option>
+									<option value="s16le">s16le</option>
+									<option value="s24be">s24be</option>
+									<option value="s24le">s24le</option>
+									<option value="s32be">s32be</option>
+									<option value="s32le">s32le</option>
+									<option value="s337m">s337m</option>
+									<option value="s8">s8</option>
+									<option value="sami">sami</option>
+									<option value="sap">sap</option>
+									<option value="sbc">sbc</option>
+									<option value="sbg">sbg</option>
+									<option value="scc">scc</option>
+									<option value="sdp">sdp</option>
+									<option value="sdr2">sdr2</option>
+									<option value="sds">sds</option>
+									<option value="sdx">sdx</option>
+									<option value="segment">segment</option>
+									<option value="ser">ser</option>
+									<option value="sgi_pipe">sgi_pipe</option>
+									<option value="shn">shn</option>
+									<option value="siff">siff</option>
+									<option value="singlejpeg">singlejpeg</option>
+									<option value="sln">sln</option>
+									<option value="smjpeg">smjpeg</option>
+									<option value="smk">smk</option>
+									<option value="smoothstreaming">smoothstreaming</option>
+									<option value="smush">smush</option>
+									<option value="sol">sol</option>
+									<option value="sox">sox</option>
+									<option value="spdif">spdif</option>
+									<option value="spx">spx</option>
+									<option value="srt">srt</option>
+									<option value="stl">stl</option>
+									<option value="stream_segment,s">s</option>
+									<option value="streamhash">streamhash</option>
+									<option value="subviewer">subviewer</option>
+									<option value="subviewer1">subviewer1</option>
+									<option value="sunrast_pipe">sunrast_pipe</option>
+									<option value="sup">sup</option>
+									<option value="svag">svag</option>
+									<option value="svcd">svcd</option>
+									<option value="svg_pipe">svg_pipe</option>
+									<option value="swf">swf</option>
+									<option value="tak">tak</option>
+									<option value="tedcaptions">tedcaptions</option>
+									<option value="tee">tee</option>
+									<option value="thp">thp</option>
+									<option value="tiertexseq">tiertexseq</option>
+									<option value="tiff_pipe">tiff_pipe</option>
+									<option value="tmv">tmv</option>
+									<option value="truehd">truehd</option>
+									<option value="tta">tta</option>
+									<option value="tty">tty</option>
+									<option value="txd">txd</option>
+									<option value="ty">ty</option>
+									<option value="u16be">u16be</option>
+									<option value="u16le">u16le</option>
+									<option value="u24be">u24be</option>
+									<option value="u24le">u24le</option>
+									<option value="u32be">u32be</option>
+									<option value="u32le">u32le</option>
+									<option value="u8">u8</option>
+									<option value="uncodedframecrc">uncodedframecrc</option>
+									<option value="v210">v210</option>
+									<option value="v210x">v210x</option>
+									<option value="vag">vag</option>
+									<option value="vc1">vc1</option>
+									<option value="vc1test">vc1test</option>
+									<option value="vcd">vcd</option>
+									<option value="vfwcap">vfwcap</option>
+									<option value="vidc">vidc</option>
+									<option value="vividas">vividas</option>
+									<option value="vivo">vivo</option>
+									<option value="vmd">vmd</option>
+									<option value="vob">vob</option>
+									<option value="vobsub">vobsub</option>
+									<option value="voc">voc</option>
+									<option value="vpk">vpk</option>
+									<option value="vplayer">vplayer</option>
+									<option value="vqf">vqf</option>
+									<option value="w64">w64</option>
+									<option value="wav">wav</option>
+									<option value="wc3movie">wc3movie</option>
+									<option value="webm">webm</option>
+									<option value="webm_chunk">webm_chunk</option>
+									<option value="webm_dash_manife">webm_dash_manife</option>
+									<option value="webp">webp</option>
+									<option value="webp_pipe">webp_pipe</option>
+									<option value="webvtt">webvtt</option>
+									<option value="wsaud">wsaud</option>
+									<option value="wsd">wsd</option>
+									<option value="wsvqa">wsvqa</option>
+									<option value="wtv">wtv</option>
+									<option value="wv">wv</option>
+									<option value="wve">wve</option>
+									<option value="xa">xa</option>
+									<option value="xbin">xbin</option>
+									<option value="xmv">xmv</option>
+									<option value="xpm_pipe">xpm_pipe</option>
+									<option value="xvag">xvag</option>
+									<option value="xwd_pipe">xwd_pipe</option>
+									<option value="xwma">xwma</option>
+									<option value="yop">yop</option>
+									<option value="yuv4mpegpipe">yuv4mpegpipe</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input style="width: 260px;" type="submit" value="Convert">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<br>
+			<div class="spanBox">
+				<h2>Video Bitrate Calculator (WIP):</h2>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<span>Desired Size (MB):</span>
+							</td>
+							<td>
+								<input type="text" id="sizeIn" value="8">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Length (Sec):</span>
+							</td>
+							<td>
+								<input type="text" id="lenIn" value="60">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Audio Bitrate (kbps):</span>
+							</td>
+							<td>
+								<input type="text" id="aBitsIn" value="192">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input style="width: 290px;" type="button" onclick="calcSize()" value="Calculate Size">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Video Bitrate (kbps):</span>
+							</td>
+							<td>
+								<input type="text" id="vBitsOut" readonly>
+							</td>
+						</tr>
+						<script type="text/javascript">
+							const calcSize = () => {
+								let desSize = Number(document.getElementById("sizeIn").value);
+								let desLen = Number(document.getElementById("lenIn").value);
+								let desABits = Number(document.getElementById("aBitsIn").value);
+								document.getElementById("vBitsOut").value = Math.floor(((desSize * 8192) / desLen) - desABits);
+							};
+						</script>
+					</tbody>
+				</table>
+				<p>File size WILL be higher than that you chose due<br>
+				to numerous sorts of factors but it will be close.<br>
+				You can fiddle with size/fps to accomodate for that difference.<br>
+				<br>
+				Example:<br>
+				Video Bitrate: 40kbps<br>
+				Size: 75% (of Original, Was Changed)<br>
+				FPS: 15 (Was Changed)<br>
+				Audio Bitrate: 96kbps<br>
+				Channels: 1<br>
+				Length: 8 Minutes (480 Sec, Rounded Up)<br>
+				<br>
+				Desired MB: 8<br>
+				Real Size (No FPS/Scale): 9.0MB<br>
+				Size After FPS/Scale: 7.96MB</p>
+				<!--eM-Krow#4944-->
+			</div>
+		</form>
+	</body>
+</html>
